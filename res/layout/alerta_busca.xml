@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:text="Usuário encontrado com sucesso" />
+    <Button
+        android:id="@+id/confirma_busca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK" 
+        android:onClick="alerta_busca_Onclick">
+    </Button>
+</LinearLayout>

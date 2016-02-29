@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/label_nome_reconhece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do usuário:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/nome_usuario_reconhece"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/label_idade_reconhece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idade:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/idade_usuario_reconhece"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" >
+
+
+    </EditText>
+
+
+
+    <Button
+        android:id="@+id/busca_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar Usuário" 
+        android:onClick="buscar_Onclick">
+    </Button>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:text="Pressione o botão uma vez e pronuncie a frase-senha. Pressione novamente quando terminar a frase." />
+
+    <ToggleButton
+        android:id="@+id/gravar_reconhece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Parado"
+        android:textOn="Gravando"
+        android:onClick="player_reconhece_Onclick"/>
+
+</LinearLayout>

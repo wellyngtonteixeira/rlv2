@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/label_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do usuário:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/nome_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/label_idade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idade:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/idade_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" >
+
+
+    </EditText>
+
+
+
+    <Button
+        android:id="@+id/cadastra_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastra Usuário" 
+        android:onClick="cadastrar_Onclick">
+    </Button>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:text="Pressione o botão uma vez e pronuncie a frase-senha. Pressione novamente quando terminar a frase. Repita esse procedimento 3 vezes." />
+
+    <ToggleButton
+        android:id="@+id/gravar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Parado"
+        android:textOn="Gravando"
+        android:onClick="player_Onclick"/>
+
+</LinearLayout>
